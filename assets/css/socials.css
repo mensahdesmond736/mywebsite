@@ -1,0 +1,37 @@
+/* Social icon bar styles */
+.social-icons {
+  display: flex;
+  justify-content: center;
+  gap: 14px;
+  align-items: center;
+  margin-top: 12px;
+}
+
+.social-icons a {
+  display: inline-flex;
+  width: 44px;
+  height: 44px;
+  border-radius: 8px;
+  background: rgba(0,0,0,0.03);
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+
+.social-icons a img {
+  width: 22px;
+  height: 22px;
+  display: block;
+}
+
+.social-icons a:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 18px rgba(0,0,0,0.12);
+}
+
+/* Ensure the contact section social group stacks on small screens */
+@media (max-width: 480px) {
+  .social-icons { gap: 10px; }
+  .social-icons a { width: 40px; height: 40px; border-radius: 6px; }
+  .social-icons a img { width: 20px; height: 20px; }
+}

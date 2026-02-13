@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Questions</title>
+    <link rel="stylesheet" href="quiz.css">
+</head>
+<body>
+    <h2>Hello <span id="usern"></span>!</h2><hr>
+
+    <div class="quiz-card" id="questionScreen">
+        <div class="header">
+            <div class="qCount">Question 1 of 10</div>
+            <div class="timerBox">Time Left: 00:00</div>
+        </div>
+        <div class="questionBox">
+            <h2>Loading Question...</h2>
+        </div>
+        <div class="optionBox"></div>
+
+        <div class="footer">
+            <button id="prev-btn">Previous</button>
+            <button id="next-btn">Next Question</button>
+        </div>
+    </div>
+
+    <div id="result-box" class="result-box result-card" style="display:none;">
+        <h2>Quiz Result</h2>
+        <h1 id="final-score">0</h1>
+        <div style="margin:12px 0;text-align:right;">
+            <p id="reviewResultBtn">Review Answers</p>
+        </div>
+        <div id="review">review-list</div>
+    </div>
+
+    <script src="log.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
